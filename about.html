@@ -14,13 +14,14 @@
       body{
         background-image: linear-gradient(hsla(0, 100%, 20%, 0.5), hsla(0, 100%, 20%, 0.5)
         ), url("IMG_8633.jpeg");
-        background-repeat:repeat, no-repeat;
+        background-repeat:repeat, repeat;
         background-size: cover, cover;
-        background-attachment: fixed, fixed;
+        /* background-attachment: fixed, fixed; */
       }
 
       img{
         width: 44%;
+        /* object-fit: cover; */
       }
 
       h1{
@@ -39,10 +40,9 @@
         border: 0.1rem solid white;
         color: #FFF;
         text-decoration: none;
-        text-spacing: 3rem;
         text-transform: uppercase;
         font-weight: bold;
-        letter-spacing: 0.7rem;
+        letter-spacing: 3px;
         text-align: center;
         border-radius: 0.3rem;
         transition: 0.3s;
@@ -64,7 +64,8 @@
       }
 
       .links{
-        padding: 3rem;
+        padding: 55px;
+        text-align: center;
       }
 
       .text{
@@ -78,19 +79,11 @@
         text-align: center;
         font-size: 25px;
         font-weight: 400;
-        letter-spacing: 0.2rem;
+        /* letter-spacing: 0.2rem; */
         line-height: 3rem;
         -webkit-text-stroke: 0.2px black;
         /* color: black; */
         color: white;
-      }
-
-      .link1{
-        padding-top: 1rem;
-      }
-
-      .link2{
-        padding-top: 7rem;
       }
 
       form{
@@ -172,10 +165,9 @@
         padding-bottom:1.3rem;
         border: 0.1rem solid white;
         text-decoration: none;
-        text-spacing: 3rem;
         text-transform: uppercase;
         font-weight: bold;
-        letter-spacing: 0.7rem;
+        /* letter-spacing: 0.7rem; */
         text-align: center;
         border-radius: 0.3rem;
         transition: 0.3s;
@@ -210,6 +202,15 @@
         font-family: "Lato";
       }
 
+      @media only screen 
+              and (max-device-width: 1024px) {
+
+                input[type="submit"]{
+                  width: 40%;
+                }
+              }
+
+
     </style>
   </head>
   <body>
@@ -223,9 +224,7 @@
           </h1>
         </div>
         <div class="links">
-          <div class="link2">
           <a href="index.html">Home</a>
-          </div>
         </div>
         <div class="container">
           <h1> CONTACT </h1>
